@@ -1,0 +1,172 @@
+/* Normalize.css Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+body {
+  background-color: #2ecc71; 
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+} 
+
+.suggestion {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.suggestion input[type="text"] {
+  margin-right: -1.3em;
+}
+
+.suggestion button {
+  margin-left: 0.5em;
+  width: 100px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+}
+
+.input-field {
+  margin-right: 0.5em;
+  width: 40%;
+  height: 33px;
+}
+
+.insert-button {
+  margin-left: 0.5em;
+}
+
+.generate-button {
+  margin-left: 0.5em;
+  background: #1ca9c9;
+  width: 20px;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: currentColor 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  background: #0fdb53;
+}
+
+.my-modal {
+  width: 400px;
+  margin: auto;
+}
