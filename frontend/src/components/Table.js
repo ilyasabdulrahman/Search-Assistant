@@ -16,7 +16,7 @@ export const Table = ({ items, onUpdateItem }) => {
 
   const handleDeleteClick = async (item) => {
     try {
-      const response = await fetch("https://crud7-4obh.onrender.com/delete", {
+      const response = await fetch("https://fetch-data-domain.onrender.com//delete", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -24,7 +24,7 @@ export const Table = ({ items, onUpdateItem }) => {
         body: JSON.stringify({ item }),
       });
       const data = await response.json();
-      console.log(data);
+      console.log(data); // Log the response data
       onUpdateItem(item); // Remove the item from the UI
     } catch (error) {
       console.error(error);
@@ -40,7 +40,7 @@ export const Table = ({ items, onUpdateItem }) => {
     }
 
     try {
-      const response = await fetch("https://crud7-4obh.onrender.com/update", {
+      const response = await fetch("https://fetch-data-domain.onrender.com//update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export const Table = ({ items, onUpdateItem }) => {
         body: JSON.stringify({ item, updatedText }),
       });
       const data = await response.json();
-      console.log(data);
+      console.log(data); // Log the response data
       setEditItem(null);
       setUpdatedText("");
       onUpdateItem(item); // Update the item in the UI

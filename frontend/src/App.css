@@ -135,8 +135,7 @@ body {
 
 .suggestion button {
   margin-left: 0.5em;
-  width: 100px;
-  height: 40px;
+  height: 40px; /* Adjust the height as needed */
 }
 
 .input-field {
@@ -147,12 +146,13 @@ body {
 
 .insert-button {
   margin-left: 0.5em;
+  width: 100px;
 }
 
 .generate-button {
   margin-left: 0.5em;
   background: #1ca9c9;
-  width: 20px;
+  width: 100px;
 }
 
 button {
@@ -164,9 +164,29 @@ button {
   padding: 0.25em 1em;
   border-radius: 0.25em;
   background: #0fdb53;
+  font-size: 13px;
 }
 
 .my-modal {
   width: 400px;
   margin: auto;
+}
+
+
+/* Adjust the font size and width for buttons on smaller screens */
+@media screen and (max-width: 800px) {
+  .input-field {
+    /* height: 33px; */
+    width: 40%;
+    margin-top: 0.5em;
+  }
+  
+  .insert-button,
+  .generate-button {
+    font-size: 11px;
+    width: 90px;
+    margin-top: 0.5em;
+    height: 20px;
+    flex-grow: 1;
+  }
 }

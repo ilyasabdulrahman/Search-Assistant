@@ -89,3 +89,9 @@
     color: #e10d05;
   }
   
+
+  @media (max-width: 800px) {
+    .table {
+      width: 80%;
+    }
+  }
