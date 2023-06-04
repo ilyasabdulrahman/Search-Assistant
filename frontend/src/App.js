@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Table } from "./components/Table";
-import Popup from "./components/popup";
+import Popup from "./components/Popup";
 
 function App() {
   const [items, setItems] = useState([]);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Table.css";
 import { BsFillTrashFill, BsFillPencilFill, BsFillXCircleFill, BsFillCheckCircleFill } from "react-icons/bs";
-import Popup from "./popup";
+import Popup from "./Popup";
 
 export const Table = ({ items, onUpdateItem }) => {
   const [editItem, setEditItem] = useState(null);
