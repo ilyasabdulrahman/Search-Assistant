@@ -24,7 +24,7 @@ export const Table = ({ items, onUpdateItem }) => {
         body: JSON.stringify({ item }),
       });
       const data = await response.json();
-      console.log(data); // Log the response data
+      console.log(data);
       onUpdateItem(item); // Remove the item from the UI
     } catch (error) {
       console.error(error);
@@ -48,7 +48,7 @@ export const Table = ({ items, onUpdateItem }) => {
         body: JSON.stringify({ item, updatedText }),
       });
       const data = await response.json();
-      console.log(data); // Log the response data
+      console.log(data);
       setEditItem(null);
       setUpdatedText("");
       onUpdateItem(item); // Update the item in the UI
