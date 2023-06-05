@@ -16,7 +16,7 @@ export const Table = ({ items, onUpdateItem }) => {
 
   const handleDeleteClick = async (item) => {
     try {
-      const response = await fetch("https://fetch-data-domain.onrender.com//delete", {
+      const response = await fetch("https://fetch-data-domain.onrender.com/delete", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ export const Table = ({ items, onUpdateItem }) => {
     }
 
     try {
-      const response = await fetch("https://fetch-data-domain.onrender.com//update", {
+      const response = await fetch("https://fetch-data-domain.onrender.com/update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

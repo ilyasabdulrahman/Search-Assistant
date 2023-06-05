@@ -17,7 +17,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('https://fetch-data-domain.onrender.com//items', {
+      const response = await fetch('https://fetch-data-domain.onrender.com/items', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ function App() {
         return;
       }
 
-      const response = await fetch('https://fetch-data-domain.onrender.com//insert', {
+      const response = await fetch('https://fetch-data-domain.onrender.com/insert', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ function App() {
 // http://locals
   const handleGenerateSuggestion = async () => {
     try {
-      const response = await fetch('https://fetch-data-domain.onrender.com//suggestions', {
+      const response = await fetch('https://fetch-data-domain.onrender.com/suggestions', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ function App() {
 
   const handleUpdateItem = async (item) => {
     try {
-      const response = await fetch('https://fetch-data-domain.onrender.com//delete', {
+      const response = await fetch('https://fetch-data-domain.onrender.com/delete', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
