@@ -1,4 +1,4 @@
-# Search Assistant
+# SuggestMe
 Demo: https://suggestme-app.onrender.com <br />
 <br />
 This is a full-stack web application built using React, OpenAI API, Flask, Azure, MySQL and was deployed on the Render hosting site. 
