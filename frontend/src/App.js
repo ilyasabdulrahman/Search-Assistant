@@ -3,7 +3,7 @@ import './App.css';
 import { Table } from "./components/Table";
 import Popup from "./components/popup";
 
-function App() {
+function App() { 
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [inputItem, setInputItem] = useState('');
